@@ -12,7 +12,7 @@ export function ErrorBoundary({
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="text-center">
-        <h2 className="text-2xl font-bold mb-4">Something went wrong!</h2>
+        <h2 className="text-2xl font-bold mb-4">{error.message}</h2>
         <Button onClick={reset}>Try again</Button>
       </div>
     </div>

@@ -23,7 +23,7 @@ interface EditNoteDialogProps {
 }
 
 export function EditNoteDialog({ note, isOpen, onClose }: EditNoteDialogProps) {
-  const [isRecording, setIsRecording] = useState(false);
+  const [isRecording, _] = useState(false);
   const [activeFormats, setActiveFormats] = useState<string[]>([]);
 
   const debouncedSave = useCallback(
